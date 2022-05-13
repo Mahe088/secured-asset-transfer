@@ -1,0 +1,31 @@
+fabric:
+############################################################### 
+  # Declaring unique addresses of the Certificate Authorities 
+  # of all organizations.
+  cas:  
+  - "ca1.org1.asset.com"
+  - "ca1.org2.asset.com"
+############################################################### 
+  # Declaring unique addresses of the peers of organisations. 
+  # There can be multiple peers for each organizations
+  peers: 
+  - "peer1.org.asset.com"
+  # - "peer2.org.asset.com"
+  - "peer1.org1.asset.com"
+  # - "peer2.org1.asset.com"
+  - "peer1.org2.asset.com"
+  # - "peer2.org2.asset.com"
+############################################################### 
+  # Declaring unique addresses of the orderers.
+  orderers:
+  - "orderer1.asset.com"
+  - "orderer2.asset.com"
+  - "orderer3.asset.com"
+############################################################### 
+  settings:
+    ca:
+      FABRIC_LOGGING_SPEC: DEBUG
+    peer:
+      FABRIC_LOGGING_SPEC: DEBUG
+    orderer:
+      FABRIC_LOGGING_SPEC: DEBUG
